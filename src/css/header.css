@@ -1,7 +1,10 @@
 .header {
   background-color: #f7faff;
   position: fixed;
+  z-index: 999;
   width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .header-logo-link {
@@ -10,11 +13,18 @@
   display: inline-block;
   margin-top: 36px;
   margin-bottom: 36px;
+
+  @media screen and (min-width: 768px) {
+    width: 127px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
 }
 
 .header-logo-icon {
   width: inherit;
   height: inherit;
+  fill: var(--accent);
 }
 
 .header-nav {
@@ -42,6 +52,7 @@
 .burger-menu-icon {
   width: inherit;
   height: inherit;
+  stroke: var(--accent);
 }
 
 .header-nav,
@@ -89,8 +100,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  transform: translate(100%);
-
+  transform: translate(-100%);
+  background-color: white;
   transition: transform 350ms ease-in-out;
 }
 
@@ -107,3 +118,7 @@
     line-height: 1.5;
   }
 }
+
+/* .header .container {
+  padding: 0;
+} */

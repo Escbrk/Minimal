@@ -1,8 +1,24 @@
 @import url(./header.css);
+@import url(./hero.css);
+
+:root {
+  --accent: #0a224a;
+}
 
 body {
   font-family: 'Roboto', sans-serif;
   min-width: fit-content;
+  color: var(--accent);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
 ul,
@@ -23,29 +39,46 @@ a {
 }
 
 .container {
-  width: calc(375px + (16px * 2));
+  width: 100%;
+  min-width: 280px;
   padding-left: 16px;
   padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (max-width: 320px) {
-    max-width: calc(375px + (16px * 2));
+  @media screen and (min-width: 375px) {
+    width: 375px;
   }
 
   @media screen and (min-width: 768px) {
-    width: calc(704px + (16px * 2));
+    width: calc(704px + (32px * 2));
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
   @media screen and (min-width: 1440px) {
-    width: calc(1319px + (16px * 2));
+    width: calc(1319px + (60px * 2));
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }
 
-@media screen and (max-width: 767px) {
+main {
+  
+  @media screen and (min-width: 768px) {
+    margin-top: 88px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-top: 160px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
+  main {
+    margin-top: 160px;
+  }
+
   .mobile-menu,
   .mobile-menu-button {
     display: none;
