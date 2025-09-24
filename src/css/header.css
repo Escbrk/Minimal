@@ -88,7 +88,6 @@
 .desktop-nav-link {
   color: #0a224a;
   font-size: 18px;
-  line-height: 1.5;
 }
 
 .mobile-menu {
@@ -111,11 +110,9 @@
 
 .mobile-menu-link {
   color: #0a224a;
-  line-height: 1.5;
 
   @media screen and (min-width: 768px) {
     font-size: 18px;
-    line-height: 1.5;
   }
 }
 

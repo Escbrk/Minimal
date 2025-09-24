@@ -1,5 +1,6 @@
 @import url(./header.css);
 @import url(./hero.css);
+@import url(./about-us.css);
 
 :root {
   --accent: #0a224a;
@@ -9,6 +10,7 @@ body {
   font-family: 'Roboto', sans-serif;
   min-width: fit-content;
   color: var(--accent);
+  line-height: 1.5;
 }
 
 h1,
@@ -19,6 +21,11 @@ h5,
 h6,
 p {
   margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 ul,
@@ -64,7 +71,6 @@ a {
 }
 
 main {
-  
   @media screen and (min-width: 768px) {
     margin-top: 88px;
   }

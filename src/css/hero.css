@@ -54,7 +54,6 @@
   font-family: 'Playfair Display';
   font-size: 28px;
   font-weight: 400;
-  line-height: 1.5;
   text-transform: uppercase;
 
   @media screen and (min-width: 768px) {
@@ -71,7 +70,6 @@
 }
 
 .hero-text {
-  line-height: 1.5;
   max-width: 312px;
   margin-bottom: 28px;
 
