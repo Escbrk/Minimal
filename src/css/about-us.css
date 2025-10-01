@@ -1,9 +1,16 @@
 .about-us-section-wrapper {
   background-color: #f7faff;
-  padding-top: 64px;
+  padding: 64px 16px;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 30px;
+    padding: 36px 64px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 36px 69px;
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
 }
 
@@ -35,14 +42,26 @@
   font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 32px;
+    line-height: 1.41;
+  }
 }
 
 .about-us-text {
   margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
 }
 
 .features-list {
-  padding-bottom: 64px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .features-title {
@@ -56,8 +75,24 @@
   text-align: center;
   max-width: 170px;
   margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
 }
 
 .about-us-image {
   margin: 0 auto;
+}
+
+.about-us-section .container {
+  @media screen and (max-width: 767px) {
+    padding: 0;
+  }
+
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    flex-direction: row;
+    column-gap: 24px;
+  }
 }
