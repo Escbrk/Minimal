@@ -1,5 +1,56 @@
 <section class="container">
-  <div>
-    <h2 class="title">Our Products</h2>
-  </div>
+  <h2 class="title">Our Products</h2>
+
+  <ul class="products-list">
+    <li class="products-item">
+      <img
+        srcset="
+          ../img/our-products/mobile/cabinet-mobile.jpg      343w,
+          ../img/our-products/mobile/cabinet-mobile@2x.jpg   686w,
+          ../img/our-products/tablet/cabinet-tablet.jpg      344w,
+          ../img/our-products/tablet/cabinet-tablet@2x.jpg   688w,
+          ../img/our-products/desktop/cabinet-desktop.jpg    312w,
+          ../img/our-products/desktop/cabinet-desktop@2x.jpg 624w
+        "
+        sizes="(min-width:1140px) 312px, (min-width:768px) 344px, (max-width:767px) 343px"
+        src="../img/our-products/mobile/cabinet-mobile.jpg"
+        alt="cabinet"
+      />
+
+      <p class="products-description">Minimalist storage solutions</p>
+    </li>
+    <li class="products-item">
+      <img
+        srcset="
+          ../img/our-products/tablet/sofa-tablet.jpg      344w,
+          ../img/our-products/tablet/sofa-tablet@2x.jpg   688w,
+          ../img/our-products/desktop/sofa-desktop.jpg    312w,
+          ../img/our-products/desktop/sofa-desktop@2x.jpg 624w
+        "
+        sizes="(min-width:1140px) 312px, (min-width:768px) 344px"
+        src="../img/our-products/tablet/sofa-tablet.jpg"
+        alt="sofa"
+      />
+
+      <p class="products-description">Handcrafted minimalist seating</p>
+    </li>
+    <li class="products-item">
+      <img
+        srcset="../img/our-products/desktop/table-desktop@2x.jpg"
+        src="../img/our-products/desktop/table-desktop.jpg"
+        alt="table"
+      />
+
+      <p class="products-description">Sleek and simple tables</p>
+    </li>
+    <li class="products-item">
+      <img
+        srcset="../img/our-products/desktop/chair-desktop@2x.jpg"
+        src="../img/our-products/desktop/chair-desktop.jpg"
+        alt="chair"
+      />
+
+      <p class="products-description">Minimalist seating for every space</p>
+    </li>
+  </ul>
 </section>

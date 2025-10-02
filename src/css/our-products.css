@@ -1,0 +1,39 @@
+.products-description {
+  margin-top: 16px;
+}
+
+.products-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    column-gap: 16px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    column-gap: 24px;
+  }
+}
+
+.products-item {
+  display: none;
+
+  &:nth-child(-n + 1) {
+    display: block;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 16px) / 2);
+
+    &:nth-child(-n + 2) {
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: calc((100% - (24px * 3)) / 4);
+
+    & {
+      display: block;
+    }
+  }
+}
