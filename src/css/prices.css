@@ -1,9 +1,17 @@
+.container > .wrapper {
+  @media screen and (min-width: 1440px) {
+    max-width: 1096px;
+    margin: 0 auto;
+  }
+}
+
 .prices-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 30px;
   padding-bottom: 30px;
+  position: relative;
 }
 
 .prices-title {
@@ -23,9 +31,20 @@
   }
 }
 
-.container > .wrapper {
-  @media screen and (min-width: 1440px) {
-    max-width: 1096px;
-    margin: 0 auto;
-  }
+.prices-list::after {
+  content: '';
+  display: block;
+  height: 1px;
+  background-color: #0a224a;
+}
+
+.prices-item::before {
+  content: '';
+  display: block;
+  height: 1px;
+  background-color: #0a224a;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
