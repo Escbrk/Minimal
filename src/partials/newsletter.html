@@ -1,0 +1,49 @@
+<section class="container">
+  <div class="newsletter-wrapper">
+    <div>
+      <h2 class="title">Newsletter</h2>
+      <p class="newsletter-description">
+        Every week we will send you new designs and information about sales.
+      </p>
+
+      <form>
+        <label>
+          <input class="text-input" type="text" placeholder="Name" />
+        </label>
+        <label>
+          <input class="text-input" type="email" placeholder="E-mail" />
+        </label>
+
+        <div class="input-wrapper">
+          <input
+            class="checkbox-input"
+            type="checkbox"
+            id="checkbox"
+            name="checkbox"
+            required
+          />
+          <label class="checkbox-label" for="checkbox">
+            Agree to subscribe to the newsletter
+          </label>
+        </div>
+
+        <button class="form-btn" type="submit">Send</button>
+      </form>
+    </div>
+
+    <img
+      class="newsletter-img"
+      srcset="
+        ../img/newsletter/newsletter-mobile.jpg      343w,
+        ../img/newsletter/newsletter-mobile@2x.jpg   686w,
+        ../img/newsletter/newsletter-tablet.jpg      704w,
+        ../img/newsletter/newsletter-tablet@2x.jpg  1408w,
+        ../img/newsletter/newsletter-desktop.jpg     460w,
+        ../img/newsletter/newsletter-desktop@2x.jpg  920w
+      "
+      sizes="(min-width: 1440px) 460px, (min-width:768px) 704px, (max-width: 767px) 343px"
+      src="../img/newsletter/newsletter-mobile.jpg"
+      alt="sofa and book"
+    />
+  </div>
+</section>

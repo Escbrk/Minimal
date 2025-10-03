@@ -1,7 +1,12 @@
 .reviews-section {
   background-color: #f7faff;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 36px;
+  padding-bottom: 36px;
+
+  @media screen and (min-width: 1440px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .review-item {
@@ -46,6 +51,10 @@
     display: flex;
     column-gap: 16px;
   }
+
+  @media screen and (min-width: 1440px) {
+    column-gap: 24px;
+  }
 }
 
 .review-item {
@@ -60,6 +69,7 @@
 
   @media screen and (min-width: 768px) {
     width: calc((100% - 16px) / 2);
+    max-width: 344px;
 
     &:nth-child(-n + 2) {
       display: block;
@@ -68,6 +78,7 @@
 
   @media screen and (min-width: 1440px) {
     width: calc((100% - 24px) / 3);
+    max-width: 424px;
     padding: 32px;
 
     &:nth-child(-n + 3) {
@@ -105,6 +116,3 @@
     margin-left: 70px;
   }
 }
-
-/*! NOT DONE */
-/*! CHECK THE REVIEW TEXT */
