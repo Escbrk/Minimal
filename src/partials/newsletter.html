@@ -6,13 +6,38 @@
         Every week we will send you new designs and information about sales.
       </p>
 
-      <form>
-        <label>
-          <input class="text-input" type="text" placeholder="Name" />
-        </label>
-        <label>
-          <input class="text-input" type="email" placeholder="E-mail" />
-        </label>
+      <form class="newsletter-form">
+        <div class="text-input-wrapper">
+          <label for="name"></label>
+          <input
+            class="text-input"
+            type="text"
+            placeholder="Name"
+            id="name"
+            name="name"
+            required
+            minlength="2"
+          />
+
+          <svg class="error-icon">
+            <use href="../img/sprite.svg#icon-error"></use>
+          </svg>
+        </div>
+        <div class="text-input-wrapper">
+          <label for="email"></label>
+          <input
+            class="text-input"
+            type="email"
+            placeholder="E-mail"
+            id="email"
+            name="email"
+            required
+          />
+
+          <svg class="error-icon">
+            <use href="../img/sprite.svg#icon-error"></use>
+          </svg>
+        </div>
 
         <div class="input-wrapper">
           <input

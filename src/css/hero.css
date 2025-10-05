@@ -95,6 +95,12 @@
   height: 48px;
   display: flex;
   align-items: center;
+  transition: background-color 300ms ease;
+
+  &:hover,
+  &:focus {
+    background-color: #061835;
+  }
 
   @media screen and (min-width: 768px) {
     padding: 17px 72px;
