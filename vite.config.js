@@ -47,8 +47,20 @@ export default defineConfig(({ command }) => {
         sort: 'mobile-first',
       }),
       viteStaticCopy({
-        targets: [{ src: path.resolve(__dirname, 'src/img'), dest: '' }],
+        targets: [
+          {
+            src: path.resolve(__dirname, 'src/img'),
+            dest: 'img',
+          },
+        ],
       }),
+      // Исправляем пути в HTML
+      {
+        name: 'fix-html-img-paths',
+        transformIndexHtml(html) {
+          return html.replace(/(\.\.\/img\/)/g, '/Minimal/img/');
+        },
+      },
     ],
   };
 });
