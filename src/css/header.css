@@ -25,6 +25,11 @@
   width: inherit;
   height: inherit;
   fill: var(--accent);
+  margin-left: 0;
+
+  @media screen and (min-width: 768px) {
+    margin-left: -5px;
+  }
 }
 
 .header-nav {
@@ -119,7 +124,3 @@
     font-size: 18px;
   }
 }
-
-/* .header .container {
-  padding: 0;
-} */

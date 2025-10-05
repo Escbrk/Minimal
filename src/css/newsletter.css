@@ -24,6 +24,10 @@
 .newsletter-description {
   margin-bottom: 30px;
 
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    max-width: 536px;
+  }
+
   @media screen and (min-width: 768px) {
     font-size: 18px;
   }
