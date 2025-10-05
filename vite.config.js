@@ -50,7 +50,7 @@ export default defineConfig(({ command }) => {
         targets: [
           {
             src: path.resolve(__dirname, 'src/img'),
-            dest: 'img',
+            dest: 'Minimal/img',
           },
         ],
       }),
