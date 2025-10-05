@@ -1,5 +1,4 @@
 import { defineConfig } from 'vite';
-import { viteStaticCopy } from 'vite-plugin-static-copy';
 import { glob } from 'glob';
 import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
@@ -43,9 +42,6 @@ export default defineConfig(({ command }) => {
       FullReload(['./src/**/**.html']),
       SortCss({
         sort: 'mobile-first',
-      }),
-      viteStaticCopy({
-        targets: [{ src: 'src/img', dest: '' }],
       }),
     ],
   };
