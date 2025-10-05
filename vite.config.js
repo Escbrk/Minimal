@@ -54,7 +54,6 @@ export default defineConfig(({ command }) => {
           },
         ],
       }),
-      // Исправляем пути в HTML
       {
         name: 'fix-html-img-paths',
         transformIndexHtml(html) {
