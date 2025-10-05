@@ -3,6 +3,8 @@ import { glob } from 'glob';
 import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 import SortCss from 'postcss-sort-media-queries';
+import { viteStaticCopy } from 'vite-plugin-static-copy';
+import path from 'path';
 
 export default defineConfig(({ command }) => {
   return {
@@ -37,11 +39,15 @@ export default defineConfig(({ command }) => {
       outDir: '../dist',
       emptyOutDir: true,
     },
+    base: '/Minimal/',
     plugins: [
       injectHTML(),
       FullReload(['./src/**/**.html']),
       SortCss({
         sort: 'mobile-first',
+      }),
+      viteStaticCopy({
+        targets: [{ src: path.resolve(__dirname, 'src/img'), dest: '' }],
       }),
     ],
   };
