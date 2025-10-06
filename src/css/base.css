@@ -2,6 +2,11 @@
   --accent: #0a224a;
 }
 
+* {
+  scroll-behavior: smooth;
+  scroll-margin: 120px;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

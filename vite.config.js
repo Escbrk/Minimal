@@ -39,7 +39,6 @@ export default defineConfig(({ command }) => {
       outDir: '../dist',
       emptyOutDir: true,
     },
-    base: '/Minimal/',
     plugins: [
       injectHTML(),
       FullReload(['./src/**/**.html']),
@@ -57,7 +56,7 @@ export default defineConfig(({ command }) => {
       {
         name: 'fix-html-img-paths',
         transformIndexHtml(html) {
-          return html.replace(/(\.\.\/img\/)/g, '/Minimal/img/');
+          return html.replace(/(\.\.\/img\/)/g, '/img/');
         },
       },
     ],
