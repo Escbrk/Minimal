@@ -8,10 +8,10 @@ mobileMenuBtn.addEventListener('click', () => {
 
   if (mobileMenu.classList.contains('is-mobile-menu-open')) {
     mobileMenuIcon.innerHTML =
-      '<use href="/img/sprite.svg#icon-close-btn"></use>';
+      '<use href="/Minimal/img/sprite.svg#icon-close-btn"></use>';
   } else {
     mobileMenuIcon.innerHTML =
-      '<use href="/img/sprite.svg#icon-burger-menu"></use>';
+      '<use href="/Minimal/img/sprite.svg#icon-burger-menu"></use>';
   }
 });
 
