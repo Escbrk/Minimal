@@ -7,8 +7,6 @@ import { viteStaticCopy } from 'vite-plugin-static-copy';
 import path from 'path';
 
 export default defineConfig(({ command }) => {
-  const isBuild = command === 'build';
-
   return {
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
@@ -41,7 +39,7 @@ export default defineConfig(({ command }) => {
       outDir: '../dist',
       emptyOutDir: true,
     },
-    base: isBuild ? '/Minimal/' : '/',
+    base: '',
     plugins: [
       injectHTML(),
       FullReload(['./src/**/**.html']),
