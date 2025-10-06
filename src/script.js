@@ -1,17 +1,18 @@
 const mobileMenuBtn = document.querySelector('.mobile-menu-button');
 const mobileMenu = document.querySelector('.mobile-menu');
 const mobileMenuIcon = document.querySelector('.burger-menu-icon');
+const mobileCloseMenuBtn = document.querySelector('.close-menu-icon');
 const mobMenuLinks = document.querySelectorAll('.mobile-menu-link');
 
 mobileMenuBtn.addEventListener('click', () => {
   mobileMenu.classList.toggle('is-mobile-menu-open');
 
   if (mobileMenu.classList.contains('is-mobile-menu-open')) {
-    mobileMenuIcon.innerHTML =
-      '<use href="/Minimal/img/sprite.svg#icon-close-btn"></use>';
+    mobileCloseMenuBtn.classList.remove('hidden');
+    mobileMenuIcon.classList.add('hidden');
   } else {
-    mobileMenuIcon.innerHTML =
-      '<use href="/Minimal/img/sprite.svg#icon-burger-menu"></use>';
+    mobileCloseMenuBtn.classList.add('hidden');
+    mobileMenuIcon.classList.remove('hidden');
   }
 });
 
