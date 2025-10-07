@@ -57,7 +57,7 @@ export default defineConfig(({ command }) => {
       {
         name: 'fix-html-img-paths',
         transformIndexHtml(html) {
-          return html.replace(/(\.\.\/img\/)/g, '/img/');
+          return html.replace(/(\.\.\/img\/)/g, '/Minimal/img/');
         },
       },
     ],
