@@ -1,3 +1,5 @@
+'use strict';
+
 const mobileMenuBtn = document.querySelector('.mobile-menu-button');
 const mobileMenu = document.querySelector('.mobile-menu');
 const mobileMenuIcon = document.querySelector('.burger-menu-icon');
